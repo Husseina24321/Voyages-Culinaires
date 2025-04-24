@@ -1,4 +1,5 @@
 
+
 body{
   margin: 0;
   padding: 0;
@@ -64,6 +65,33 @@ body{
 
 .header_nav_close{
   display: none;
+}
+/*BANNER*/
+.banniere-fond {
+  background-image: url('../images/banner.png'); /* adapte le chemin si nécessaire */
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.banniere-fond::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* effet sombre par-dessus l’image */
+}
+
+.banniere-contenu {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  font-family: 'Playwrite AU SA', sans-serif;
 }
 /*FORM AND MAPS*/
 
