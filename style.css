@@ -171,6 +171,7 @@ body{
     border: 2px solid #94B4C1;
     border-radius: 0.5em;
     cursor: pointer;
+    transition: all 1s;
 }
     
 .form .button-submit:hover {
