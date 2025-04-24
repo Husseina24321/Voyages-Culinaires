@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyage culinaire</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/article.css">
+</head>
+<body>
+    <div class="overlay-menu-mobile" onclick="closeMenuMobile()"></div>
+    <header class="header">
+        <a href="index.html"><img src="images/logo2.png" alt="logo site"></a>
+        <nav class="header_nav">
+            <div class="header_nav_close" onclick="closeMenuMobile()">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <ul class="header_nav_menu">
+                <li class="header_nav_menu_link">
+                    <a href="#voyage"><i class="fa-solid fa-plane"></i> Voyage</a>
+                </li>
+                <li class="header_nav_menu_link">
+                    <a href="#quisommenous"><i class="fa-regular fa-compass"></i> Qui sommes nous ?</a>
+                </li>
+                <li class="header_nav_menu_link">
+                    <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+                </li>
+                <li class="header_nav_menu_link">
+                    <a href="#noustrouver"> <i class="fa-solid fa-location-dot"></i> Nous trouver</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header_burger" onclick="openMenuMobile()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <main>
+        <section class="plats">
+        <div class="main">
+        <h3>SLOVÉNIE</h3>
+        <p>Une cuisine de carrefour culturel
+        La Slovénie, nichée entre les Alpes, la Méditerranée et les Balkans, possède une gastronomie unique, carrefour entre les cuisines italienne, autrichienne, hongroise et balkanique. Le pays est petit mais divisé en plus de 20 régions gastronomiques officielles. Le terroir est riche en produits laitiers, en gibier, en légumes fermentés et en pâtisseries rustiques.</p>
+        <h3> voici les 4 plats incontournable pour réussir votre séjour en slovénie</h3>
+        🍽 Plats emblématiques :
+        <section class="plats">
+            <div class="plat">
+              <a href="index.html"><img src="images/potica.jpg" alt="potica"></a>
+              <div class="plat-contenu">
+                <h3>Potica</h3>
+                <p>➤ Région : Carniolie (Ljubljana et centre du pays)<br>
+                Gâteau roulé traditionnel, préparé avec une pâte levée fine garnie de noix hachées, graines de pavot, miel, raisins ou fromage frais. On le roule comme un strudel, puis cuit dans un moule circulaire. Plat rituel des grandes fêtes.</p>
+                <div class="boutons"><button class="btn-reserver">Réservez</button></div>
+              </div>
+            </div>
+          
+            <div class="plat">
+              <a href="index.html"><img src="images/Idrijski-z.jpg" alt="Idrija Žlikrofi"></a>
+              <div class="plat-contenu">
+                <h3>Idrija Žlikrofi</h3>
+                <p>➤ Région : Idrija (Ouest de la Slovénie)<br>
+                Petits raviolis farcis de pommes de terre, oignons, lard, parfois menthe. La pâte est façonnée à la main avec une forme typique. Ce plat est protégé par une indication géographique européenne.</p>
+                <div class="boutons"><button class="btn-reserver">Réservez</button></div>
+              </div>
+            </div>
+          
+            <div class="plat">
+              <a href="index.html"><img src="images/jota.jpg" alt="Jota"></a>
+              <div class="plat-contenu">
+                <h3>Jota</h3>
+                <p>➤ Région : Primorska (littoral slovène)<br>
+                Ragoût rustique à base de choucroute, haricots blancs, pommes de terre, ail et viandes fumées (souvent du porc). Très apprécié pour son côté réconfortant en hiver.</p>
+                <div class="boutons"><button class="btn-reserver">Réservez</button></div>
+              </div>
+            </div>
+          
+            <div class="plat">
+              <a href="index.html"><img src="images/kranjska-klobasa.jpg" alt="kranjska-klobasa"></a>
+              <div class="plat-contenu">
+                <h3>Kranjska Klobasa</h3>
+                <p>➤ Région : Carniole (région centrale)<br>
+                Saucisse fumée faite de porc maigre et gras, ail et poivre. Elle est cuite à l’eau ou grillée, souvent servie avec du chou ou des pommes de terre.</p>
+                <div class="boutons"><button class="btn-reserver">Réservez</button></div>
+              </div>
+            </div>
+          </section> 
+    </footer>
+    <script defer>
+        function openMenuMobile(){
+            document.querySelector(".header_nav").classList.add("open");
+            document.querySelector(".overlay-menu-mobile").classList.add("open");
+        }
+        function closeMenuMobile(){
+            document.querySelector(".header_nav").classList.remove("open")
+            document.querySelector(".overlay-menu-mobile").classList.remove("open");
+        }
+    </script>
+</body>
+</html>
