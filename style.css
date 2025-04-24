@@ -65,6 +65,97 @@ body{
 .header_nav_close{
   display: none;
 }
+/*FORM AND MAPS*/
+
+.formAndMaps{
+    display:flex;
+    justify-content: space-around;
+}
+
+/*FORM*/
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+    width:40%
+}
+
+.form h2{
+    text-align: center;
+}
+
+.form fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 0;
+    font-size: 1.4rem;
+    border:none
+}
+
+.form .field {
+    display: flex;
+    padding: 1em 0;
+}
+
+.form .field label {
+    width: 30%;
+    padding: 0.5em;
+}
+
+.form .field input {
+    width: 70%;
+}
+
+.form .field + .field {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.form input,
+.form select,
+.form textarea {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    font-size: 1.4rem;
+    padding: 0.5em 1em;
+}
+
+.form select,
+.form textarea {
+    width: 80%;
+    margin-bottom: 1em;
+}
+
+.form textarea {
+    min-height: 5em;
+}
+
+.form .button-submit {
+    padding: 1em 2em;
+    font-size: 1.4rem;
+    color: white;
+    background-color: #94B4C1;
+    border: 2px solid #94B4C1;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+    
+.form .button-submit:hover {
+    color: #94B4C1;
+    background-color: white;
+}
+
+/*MAPS*/
+
+.maps{
+    width: 40%;
+}
+.maps iframe{
+    width:100%
+}
+
 
 /*FOOTER*/
 footer {
