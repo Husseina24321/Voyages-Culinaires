@@ -59,6 +59,9 @@ body{
   left: 0;
 }
 
+.header_nav.open{
+    z-index: 2;
+}
 .header_burger{
   display: none;
 }
