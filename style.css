@@ -250,8 +250,57 @@ gap: 10px;
   color: white;
   text-decoration: none;
 }
+/*CANADA PAGE*/
+.canada-container {
+  max-width: 1100px;
+  margin: auto;
+}
+.canada-intro {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 1em;
+}
 
-@media screen and ( max-width:500px){
+.canada-cards {
+  display: flex;
+  text-align: center;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.canada-card{
+    position: relative;
+    border-radius:20px;
+    background-color: #f7f7f7;
+    width: 25%;
+    height:1150px;
+}
+
+.canada-card img {
+  border-radius: 20px;
+  width: 250px;
+  height: 250px;
+}
+
+.canada-card button {
+  position:absolute;
+  bottom:30px;
+  left:30%;
+  padding: 1em 2em;
+  border-radius: 20px;
+  background-color: #46c9f9;
+  border: 1px solid #46c9f9;
+  color: white;
+  transition: all 0.5s;
+
+}
+.canada-card button:hover{
+    color:#46c9f9;
+    background-color:white;
+    transform:scale(1.2)
+}
+@media screen and ( max-width:600px){
 
   /*HEADER*/
   
@@ -327,4 +376,30 @@ gap: 10px;
         margin:auto;
         margin-bottom: 1em;
     }
+
+  
+   /*CANADA PAGE*/
+
+  .canada-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .canada-card{
+    padding:1em;
+      position: relative;
+      border-radius:20px;
+      background-color: #f7f7f7;
+      width: 100%;
+      height:850px;
+  }
+  
+  .canada-card img {
+    width: 300px;
+    height:300px
+  }
+  
+  .canada-card button {
+    left:40%;
+  }
 }
