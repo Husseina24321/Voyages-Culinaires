@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voyage culinaire Canada</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="overlay-menu-mobile" onclick="closeMenuMobile()"></div>
+    <header class="header">
+        <a href="index.html"><img src="images/logo2.png" alt="logo site" /></a>
+        <nav class="header_nav">
+            <div class="header_nav_close" onclick="closeMenuMobile()">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <ul class="header_nav_menu">
+                <li class="header_nav_menu_link">
+                    <a href="#voyage"><i class="fa-solid fa-plane"></i> Voyage</a>
+                </li>
+                <li class="header_nav_menu_link">
+                    <a href="#quisommenous"><i class="fa-regular fa-compass"></i> Qui sommes nous ?</a>
+                </li>
+                <li class="header_nav_menu_link">
+                    <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+                </li>
+                <li class="header_nav_menu_link">
+                    <a href="#noustrouver">
+                        <i class="fa-solid fa-location-dot"></i> Nous trouver</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header_burger" onclick="openMenuMobile()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <main class="canada-container">
+        <section class="canada-intro">
+        <h2>Canada</h2>
+        <p>Une cuisine à la croisée des cultures
+            Le Canada allie traditions autochtones, influences françaises, britanniques et multiculturelles. Le Québec
+            apporte une forte identité culinaire, tandis que l’Ouest met en valeur les produits de la mer. Les Premières
+            Nations ont aussi un rôle majeur dans la redécouverte du terroir canadien : gibier, baies sauvages, poisson
+            fumé.</p>
+        <p><strong>Voici les 4 plats incontournables pour réussir votre voyage au Canada</strong></p>
+        <p>🍽 Plats emblématiques :</p>
+    </section>
+        <div class= canada-cards>
+        <article class=" canada-card" >
+            <img src="images/poutine.jpg" alt="image de la poutine ">
+            <h3>Poutine</h3>
+            <p>➤ Région : Québec (Centre-du-Québec)</p>
+            <p>Ce mélange décadent de frites, fromage en grains (qui "squish" sous la dent) et sauce brune chaude est né
+                dans les années 1950. C’est un plat populaire, souvent revisité avec foie gras, porc effiloché ou
+                truffes dans les restaurants.</p>
+                <button>Réserver</button>
+        </article>
+        <article class=" canada-card">
+            <img src="images/tourtiere.jpg" alt="image de la Tourtière">
+            <h3>Tourtière</h3>
+            <p>➤ Région : Saguenay–Lac-Saint-Jean (Québec)</p>
+            <p>Tarte rustique à la viande, souvent un mélange de porc, veau et bœuf, parfois de gibier. Assaisonnée de
+                cannelle, muscade et clou de girofle. Cuite lentement, elle est au cœur des traditions des Fêtes.</p>
+            <button>Réserver</button>
+        </article>
+        <article class=" canada-card">
+            <img src="images/saumon-fume.jpg" alt="image de saumon fumé">
+            <h3>Saumon fumé</h3>
+            <p>➤ Région : Colombie-Britannique et territoires autochtones</p>
+            <p>Pêché dans le Pacifique, le saumon est fumé à froid ou à chaud, selon les techniques des peuples
+                autochtones comme les Haïdas ou les Salishs. Il est souvent fumé sur des planches de cèdre, et parfois
+                mariné au sirop d’érable.</p>
+            <button>Réserver</button>
+        </article>
+        <article class=" canada-card">
+            <img src="images/butter-tarts.jpg" alt="image de Butter Tarts">
+            <h3>Butter Tarts</h3>
+            <p>➤ Région : Ontario</p>
+            <p>Petites tartelettes à la croûte sablée, garnies d’un mélange de beurre, cassonade, œufs, parfois de
+                raisins secs ou pacanes. Douces, caramélisées et très populaires dans les foires et marchés fermiers.
+            </p>
+            <button>Réserver</button>
+        </article>
+    </div>
+    </main>
+    <footer>
+        <div class="bloc-gauche">
+            <div class="logo">
+                <img src="images\logo2.png" alt="voyage culinaire" />
+            </div>
+            <div class="slogan">
+                <p>Parce que chaque destination mérite d’être savourée</p>
+            </div>
+        </div>
+        <div class="reseaux">
+            <h2>Nos réseaux sociaux</h2>
+            <div class="icones">
+                <a href="https://fr-fr.facebook.com/" class="fab fa-facebook"></a>
+                <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                <a href="https://x.com" class="fab fa-twitter"></a>
+                <a href="https://pinterest.com" class="fab fa-pinterest"></a>
+            </div>
+        </div>
+    </footer>
+    <script defer>
+        function openMenuMobile() {
+            document.querySelector(".header_nav").classList.add("open");
+            document.querySelector(".overlay-menu-mobile").classList.add("open");
+        }
+        function closeMenuMobile() {
+            document.querySelector(".header_nav").classList.remove("open");
+            document.querySelector(".overlay-menu-mobile").classList.remove("open");
+        }
+    </script>
+</body>
+
+</html>
+</body>
+
+</html>
