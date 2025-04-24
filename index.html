@@ -1,117 +1,327 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voyage culinaire</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="overlay-menu-mobile" onclick="closeMenuMobile()"></div>
-    <header class="header">
-        <a href="index.html"><img src="images/logo2.png" alt="logo site"></a>
-        <nav class="header_nav">
-            <div class="header_nav_close" onclick="closeMenuMobile()">
-                <i class="fa-solid fa-xmark"></i>
-            </div>
-            <ul class="header_nav_menu">
-                <li class="header_nav_menu_link">
-                    <a href="#voyage"><i class="fa-solid fa-plane"></i> Voyage</a>
-                </li>
-                <li class="header_nav_menu_link">
-                    <a href="#quisommenous"><i class="fa-regular fa-compass"></i> Qui sommes nous ?</a>
-                </li>
-                <li class="header_nav_menu_link">
-                    <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
-                </li>
-                <li class="header_nav_menu_link">
-                    <a href="#noustrouver"> <i class="fa-solid fa-location-dot"></i> Nous trouver</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="header_burger" onclick="openMenuMobile()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-    </header>
-    <main>
-         <div class="formAndMaps">
-        <section id="contact" class="form">
-            <h2>Nous contacter</h2>
-          <form method="post">
-            <fieldset>
-              <div class="field">
-                <label for="firstName">Prénom</label>
-                <input type="text" id="firstName" />
-              </div>
-              <div class="field">
-                <label for="lastName">Nom</label>
-                <input type="text" id="lastName" />
-              </div>
-              <div class="field">
-                <label for="email">Email</label>
-                <input type="email" id="email" />
-              </div>
-              <textarea placeholder="Votre message"></textarea>
-              <button class="button-submit" type="submit">
-                Valider le formulaire
-              </button>
-            </fieldset>
-          </form>
-        </section>
-        <section class= "maps" id="noustrouver">
-          <h2>Notre adresse</h2>
-          <p>Retrouvez-nous sur Google Maps :</p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.5028674505857!2d-1.6329819237035652!3d48.11982497124155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480edec2ea30b8cb%3A0x6d61f562fa937a83!2s4%20Rue%20de%20la%20Ch%C3%A2taigneraie%2C%2035510%20Cesson-S%C3%A9vign%C3%A9!5e0!3m2!1sfr!2sfr!4v1745482954412!5m2!1sfr!2sfr"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          >
-          </iframe>
-        </section>
-      </div>
-    </main>
-    <footer>
-        <div class="bloc-gauche">
-        <div class="logo">
-        <img src="images\logo2.png"alt="voyage culinaire">
-    </div>
-        <div class="slogan">
-        <p>Parce que chaque destination mérite d’être savourée</p>
-    </div>
-</div>
-        <div class="reseaux">
-        <h2>Nos réseaux sociaux</h2>
-        <div class="icones">
-          <a href="https://fr-fr.facebook.com/"  class="fab fa-facebook"></a>
-          <a href="https://www.instagram.com/"  class="fab fa-instagram"></a> 
-          <a href="https://x.com"  class="fab fa-twitter"></a>
-          <a href="https://pinterest.com"  class="fab fa-pinterest"></a>
-        </div>
-    </div>
-    </footer>
-    <script defer>
-        function openMenuMobile(){
-            document.querySelector(".header_nav").classList.add("open");
-            document.querySelector(".overlay-menu-mobile").classList.add("open");
-        }
-        function closeMenuMobile(){
-            document.querySelector(".header_nav").classList.remove("open")
-            document.querySelector(".overlay-menu-mobile").classList.remove("open");
-        }
-    </script>
-</body>
-</html>
+
+
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-size: 1.4rem;
+}
+/*header*/
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #94B4C1;
+}
+
+.header i{
+  color:white
+}
+.header img{
+  width:80px;
+}
+
+/*HEADER NAV*/
+
+.header_nav_menu{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.header_nav_menu_link{
+  margin-right: 2rem;
+}
+.header_nav_menu_link:last-of-type {
+  margin-right: initial;
+}
+.header_nav_menu_link a{
+  color:white;
+  text-decoration: none;
+  position: relative;
+}
+.header_nav_menu_link a:after{ 
+  content: "";
+  height: 2px;
+  background-color:white;
+  width: 0;
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  transition: 0.3s all ease-in-out;
+}
+
+.header_nav_menu_link a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.header_burger{
+  display: none;
+}
+
+.header_nav_close{
+  display: none;
+}
+/*BANNER*/
+.banniere-fond {
+  background-image: url('../images/banner.png'); /* adapte le chemin si nécessaire */
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.banniere-fond::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* effet sombre par-dessus l’image */
+}
+
+.banniere-contenu {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  font-family: 'Playwrite AU SA', sans-serif;
+}
+/*FORM AND MAPS*/
+
+.formAndMaps{
+    display:flex;
+    justify-content: space-around;
+}
+
+/*FORM*/
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+    width:40%
+}
+
+.form h2{
+    text-align: center;
+}
+
+.form fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 0;
+    font-size: 1.4rem;
+    border:none
+}
+
+.form .field {
+    display: flex;
+    padding: 1em 0;
+}
+
+.form .field label {
+    width: 30%;
+    padding: 0.5em;
+}
+
+.form .field input {
+    width: 70%;
+}
+
+.form .field + .field {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.form input,
+.form select,
+.form textarea {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    font-size: 1.4rem;
+    padding: 0.5em 1em;
+}
+
+.form select,
+.form textarea {
+    width: 80%;
+    margin-bottom: 1em;
+}
+
+.form textarea {
+    min-height: 5em;
+}
+
+.form .button-submit {
+    padding: 1em 2em;
+    font-size: 1.4rem;
+    color: white;
+    background-color: #94B4C1;
+    border: 2px solid #94B4C1;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+    
+.form .button-submit:hover {
+    color: #94B4C1;
+    background-color: white;
+}
+
+/*MAPS*/
+
+.maps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+.maps iframe{
+    width:100%
+}
+
+
+/*FOOTER*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #94B4C1;
+  padding: 15px 30px;
+}
+
+.bloc-gauche {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: justify;
+  max-width: 300px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo img {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+}
+
+.slogan {
+  font-family: 'Playwrite AU SA', cursive;
+  font-size: 1em;
+  color: white;
+  margin-top: 8px;
+}
+
+.reseaux {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color:white;
+}
+
+.reseaux h2 {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.icones {
+  display: flex;
+flex-direction: row;
+gap: 10px;
+}
+
+.reseaux a {
+  font-size: 1.2em;
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and ( max-width:500px){
+
+  /*HEADER*/
+  
+  .header_burger{
+      display: block;
+      cursor: pointer;
+  }
+  .header_nav{
+      position : fixed;
+      width:300px;
+      height: 50vh;
+      background-color: #94B4C1 ;
+      top: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translateX(100%);
+      transition: 0.3s transform ease-in-out;
+  }
+  
+  .header_nav.open{
+      transform: initial;
+      display: flex;
+  }
+  .header_nav_close{
+      transform: none;
+      cursor: pointer;
+  }
+  .header_nav_menu{
+      flex-direction: column;    
+      align-items: flex-start;
+  }
+  .header_nav_menu_link{
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+  .header_nav_menu_link a{
+      font-size: 24px;
+  }
+  .header_nav_close{
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+  }
+  .overlay-menu-mobile{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0,0,0,0.5);
+      display: none;
+  }
+  .overlay-menu-mobile.open{
+      display: block;
+  }
+
+  
+    /*FORM AND MAPS*/
+
+    .formAndMaps{
+        flex-direction: column;
+    }
+   
+    .form{
+        width:80%;
+        margin:auto;
+    }
+    .maps{
+        width: 80%;
+        margin:auto;
+        margin-bottom: 1em;
+    }
+}
