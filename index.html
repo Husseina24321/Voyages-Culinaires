@@ -38,18 +38,51 @@
         </div>
     </header>
     <main>
-        <section class = "">
-            <h2>Notre adresse</h2>
-            <p>Retrouvez-nous sur Google Maps :</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.5028674505857!2d-1.6329819237035652!3d48.11982497124155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480edec2ea30b8cb%3A0x6d61f562fa937a83!2s4%20Rue%20de%20la%20Ch%C3%A2taigneraie%2C%2035510%20Cesson-S%C3%A9vign%C3%A9!5e0!3m2!1sfr!2sfr!4v1745482954412!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
-        width="600" 
-        height="450" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </section>
+         <div class="formAndMaps">
+        <section id="contact" class="form">
+            <h2>Nous contacter</h2>
+          <form method="post">
+            <fieldset>
+              <div class="field">
+                <label for="firstName">Prénom</label>
+                <input type="text" id="firstName" />
+              </div>
+              <div class="field">
+                <label for="lastName">Nom</label>
+                <input type="text" id="lastName" />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" />
+              </div>
+              <textarea placeholder="Votre message"></textarea>
+              <button class="button-submit" type="submit">
+                Valider le formulaire
+              </button>
+            </fieldset>
+          </form>
+        </section>
+        <section class= "maps" id="noustrouver">
+          <h2>Notre adresse</h2>
+          <p>Retrouvez-nous sur Google Maps :</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.5028674505857!2d-1.6329819237035652!3d48.11982497124155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480edec2ea30b8cb%3A0x6d61f562fa937a83!2s4%20Rue%20de%20la%20Ch%C3%A2taigneraie%2C%2035510%20Cesson-S%C3%A9vign%C3%A9!5e0!3m2!1sfr!2sfr!4v1745482954412!5m2!1sfr!2sfr"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </section>
+      </div>
     </main>
     <footer>
         <div class="bloc-gauche">
