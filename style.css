@@ -1,11 +1,9 @@
-
-
-
 body{
   margin: 0;
   padding: 0;
   font-size: 62.5%;
   font-size: 1.4rem;
+  font-family: 'Playwrite AU SA', sans-serif;
 }
 /*header*/
 
@@ -20,7 +18,7 @@ body{
   color:white
 }
 .header img{
-  width:80px;
+  width:120px;
 }
 
 /*HEADER NAV*/
@@ -71,9 +69,10 @@ body{
 .header_nav_close{
   display: none;
 }
+
 /*BANNER*/
 .banniere-fond {
-  background-image: url('../images/banner.png'); /* adapte le chemin si nécessaire */
+  background-image: url('../images/banner.jpg'); /* adapte le chemin si nécessaire */
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -99,6 +98,40 @@ body{
   font-family: 'Playwrite AU SA', sans-serif;
 }
 
+/*SECTION PAYS*/
+
+.pays{
+padding: 1rem;
+  margin: 1em;
+  display:flex;
+  gap:2rem;
+  flex-wrap: wrap;
+}
+
+.pays-article{
+  width:49%;
+  position:relative
+}
+
+.pays-article p{
+  position: absolute;
+  z-index:1;
+  top:25%;
+  left:40%;
+  font-size: xx-large;
+  color:white
+}
+
+.pays-article img{
+  width:100%;
+  height:300px;
+  transition:all 1s;
+}
+
+.pays-article img:hover{
+  transform: scale(1.1);
+}
+
  /*PRÉSENTATION*/
   .container {
     width:100%;
@@ -109,6 +142,11 @@ body{
 
   .video-column{
     width:50%;
+    margin:10px;
+  }
+
+  .video-column video{
+    width:100%;
     margin:10px;
   }
 
@@ -276,38 +314,64 @@ gap: 10px;
 }
 
 /*CANADA PAGE*/
- .canada-container {
-   max-width: 1100px;
-   margin: auto;
- }
- .canada-intro {
-   display: flex;
-   flex-direction: column;
-   text-align: center;
-   margin: 0 1em;
- }
- 
- .canada-cards {
-   display: flex;
-   text-align: center;
-   gap: 1em;
-   margin-bottom: 2em;
- }
- 
- .canada-card{
-     position: relative;
-     border-radius:20px;
-     background-color: #f7f7f7;
-     width: 25%;
-     height:1150px;
- }
- 
- .canada-card img {
-   border-radius: 20px;
-   width: 250px;
-   height: 250px;
- }
+.canada-container {
+  max-width: 1300px;
+  margin: auto;
+}
+.canada-intro {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 1em;
 
+}
+
+.canada-cards {
+  display: flex;
+  text-align: center;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.canada-card{
+    position: relative;
+    border-radius:20px;
+    background-color: #f7f7f7;
+    width: 25%;
+    height:1150px;
+}
+.canada-card p:first-of-type{
+  margin-bottom: 3rem;
+}
+
+.canada-card img {
+  border-radius: 20px;
+  width: 250px;
+  height: 250px;
+  transition: all 1s;
+}
+
+.canada-card img:hover{
+  transform: scale(1.2);
+}
+
+.canada-card button {
+  position:absolute;
+  bottom:30px;
+  left:30%;
+  padding: 1em 2em;
+  border-radius: 20px;
+  background-color: #46c9f9;
+  border: 1px solid #46c9f9;
+  color: white;
+  transition: all 0.5s;
+
+}
+.canada-card button:hover{
+    color:#46c9f9;
+    background-color:white;
+    transform:scale(1.2)
+}
 
 
 @media screen and ( max-width:500px){
@@ -369,7 +433,7 @@ gap: 10px;
   .overlay-menu-mobile.open{
       display: block;
   }
-}
+
     /*FORM AND MAPS*/
 
     .formAndMaps{
@@ -391,7 +455,7 @@ gap: 10px;
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   .canada-card{
     padding:1em;
       position: relative;
@@ -400,12 +464,37 @@ gap: 10px;
       width: 100%;
       height:850px;
   }
-  
+
   .canada-card img {
     width: 300px;
     height:300px
   }
-  
+
   .canada-card button {
     left:40%;
   }
+
+  /*SECTION PAYS*/
+
+.pays{
+  flex-direction: column;
+}
+
+.pays-article{
+  width:100%;
+}
+
+.pays-article p{
+  left:35%;
+}
+
+.container {
+  width:100%;
+  display: flex;
+  flex-direction: column;
+}
+.video-column video{
+  width:450px;
+}
+
+}
