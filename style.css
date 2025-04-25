@@ -59,6 +59,10 @@ body{
   left: 0;
 }
 
+.header_nav.open{
+     z-index: 2;
+ }
+
 .header_burger{
   display: none;
 }
@@ -93,6 +97,20 @@ body{
   padding: 20px;
   font-family: 'Playwrite AU SA', sans-serif;
 }
+
+ /*PRÉSENTATION*/
+  .container {
+    width:100%;
+    display: flex;
+  }
+  .video-column{
+    width:50%;
+  }
+  .text{
+  font-family: 'Playwrite AU SA', cursive;
+  font-size: 1em;
+  }
+
 /*FORM AND MAPS*/
 
 .formAndMaps{
@@ -168,6 +186,7 @@ body{
     border: 2px solid #94B4C1;
     border-radius: 0.5em;
     cursor: pointer;
+    transition: all 1s;
 }
     
 .form .button-submit:hover {
@@ -248,6 +267,41 @@ gap: 10px;
   text-decoration: none;
 }
 
+/*CANADA PAGE*/
+ .canada-container {
+   max-width: 1100px;
+   margin: auto;
+ }
+ .canada-intro {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   margin: 0 1em;
+ }
+ 
+ .canada-cards {
+   display: flex;
+   text-align: center;
+   gap: 1em;
+   margin-bottom: 2em;
+ }
+ 
+ .canada-card{
+     position: relative;
+     border-radius:20px;
+     background-color: #f7f7f7;
+     width: 25%;
+     height:1150px;
+ }
+ 
+ .canada-card img {
+   border-radius: 20px;
+   width: 250px;
+   height: 250px;
+ }
+
+
+
 @media screen and ( max-width:500px){
 
   /*HEADER*/
@@ -307,21 +361,7 @@ gap: 10px;
   .overlay-menu-mobile.open{
       display: block;
   }
-}
-  /*PRÉSENTATION*/
-  .container {
-    width:100%;
-    display: flex;
-  }
-  .video-column{
-    width:50%;
-  }
-  .text{
-  font-family: 'Playwrite AU SA', cursive;
-  font-size: 1em;
-  }
 
-  
     /*FORM AND MAPS*/
 
     .formAndMaps{
@@ -337,4 +377,4 @@ gap: 10px;
         margin:auto;
         margin-bottom: 1em;
     }
-
+}
