@@ -1,5 +1,6 @@
 
 
+
 body{
   margin: 0;
   padding: 0;
@@ -103,12 +104,16 @@ body{
     width:100%;
     display: flex;
   }
+  
   .video-column{
     width:50%;
+    margin:10px;
   }
+
   .text{
   font-family: 'Playwrite AU SA', cursive;
   font-size: 1em;
+  margin:10px;
   }
 
 /*FORM AND MAPS*/
@@ -361,7 +366,7 @@ gap: 10px;
   .overlay-menu-mobile.open{
       display: block;
   }
-
+}
     /*FORM AND MAPS*/
 
     .formAndMaps{
@@ -401,4 +406,3 @@ gap: 10px;
   .canada-card button {
     left:40%;
   }
-}
